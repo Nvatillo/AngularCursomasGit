@@ -1,0 +1,80 @@
+warning: LF will be replaced by CRLF in src/app/app.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/styles.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tsconfig.spec.json.
+The file will have its original line endings in your working directory
+[1mdiff --git a/src/app/app.component.html b/src/app/app.component.html[m
+[1mindex dc0f75e..95514c8 100644[m
+[1m--- a/src/app/app.component.html[m
+[1m+++ b/src/app/app.component.html[m
+[36m@@ -1,3 +1,4 @@[m
+ <!--<app-heroe></app-heroe>-->[m
+[31m-<app-contador></app-contador>[m
+[31m-<app-listado></app-listado>[m
+\ No newline at end of file[m
+[32m+[m[32m<!--<app-contador></app-contador>-->[m
+[32m+[m[32m<!--<app-listado></app-listado>-->[m
+[32m+[m[32m<app-main-page></app-main-page>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/app/app.module.ts b/src/app/app.module.ts[m
+[1mindex ac09dd9..fcc500c 100644[m
+[1m--- a/src/app/app.module.ts[m
+[1m+++ b/src/app/app.module.ts[m
+[36m@@ -4,6 +4,7 @@[m [mimport { BrowserModule } from '@angular/platform-browser';[m
+ import { AppComponent } from './app.component';[m
+ import { HeroesModule } from './heroes/heroe.module';[m
+ import { ContadorModule } from './contador/contador.module'[m
+[32m+[m[32mimport { DbzModule } from './dbz/dbz.module';[m
+ [m
+ @NgModule({[m
+   declarations: [[m
+[36m@@ -12,8 +13,8 @@[m [mimport { ContadorModule } from './contador/contador.module'[m
+   imports: [[m
+     BrowserModule,[m
+     HeroesModule,[m
+[31m-    ContadorModule[m
+[31m-    [m
+[32m+[m[32m    ContadorModule,[m
+[32m+[m[32m    DbzModule[m
+   ],[m
+   providers: [],[m
+   bootstrap: [AppComponent][m
+[1mdiff --git a/src/styles.css b/src/styles.css[m
+[1mindex 56f2fb0..40fd459 100644[m
+[1m--- a/src/styles.css[m
+[1m+++ b/src/styles.css[m
+[36m@@ -38,4 +38,30 @@[m
+   [m
+   .p-1 {[m
+     padding: 1px;[m
+[31m-  }[m
+\ No newline at end of file[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m  button:hover{[m
+[32m+[m[32m    background-color: #3e4144;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbutton:focus{[m
+[32m+[m[32m    outline: none;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.p-1{[m
+[32m+[m[32m    padding: 1px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.row {[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.col{[m
+[32m+[m[32m    flex-grow: 1;[m
+[32m+[m[32m    margin-right: 10px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32minput {[m
+[32m+[m[32m    display: block;[m
+[32m+[m[32m    margin: 5px;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
