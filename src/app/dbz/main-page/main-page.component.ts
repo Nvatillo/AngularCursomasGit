@@ -1,4 +1,3 @@
-import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interfaces';
 
@@ -38,7 +37,7 @@ export class MainPageComponent implements OnInit {
 
   agregarNuevoPersonaje(personaje :Personaje){
     this.personajes.push(personaje)
-    console.log("Prueba 5")
+    console.log("Git aqui vaa !! ")
   }
 
  
