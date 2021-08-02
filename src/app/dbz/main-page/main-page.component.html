@@ -9,7 +9,7 @@
     </div>
 
     <div class="col">
-       <app-agregar [dataPersonaje]="nuevo" ></app-agregar>
+       <app-agregar [dataPersonaje]="nuevo" (onNuevoPersonaje)="agregarNuevoPersonaje($event)"></app-agregar>
     </div>
 
 </div>

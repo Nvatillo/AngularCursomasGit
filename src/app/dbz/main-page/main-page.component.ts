@@ -1,3 +1,4 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interfaces';
 
@@ -33,6 +34,10 @@ export class MainPageComponent implements OnInit {
 
   cambiarNombre(event:any){
     console.log(event.target.value)
+  }
+
+  agregarNuevoPersonaje(personaje :Personaje){
+    this.personajes.push(personaje)
   }
 
  
