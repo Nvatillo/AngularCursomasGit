@@ -1,6 +1,5 @@
 import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { ConsoleReporter } from 'jasmine';
 import { Personaje } from '../interfaces/dbz.interfaces';
 
 
